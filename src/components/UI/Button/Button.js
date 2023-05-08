@@ -7,9 +7,9 @@ const Button = (props) => {
   return (
     <button
       type={props.type}
-      style={{ background: disabled ? "rgb(248, 94, 94)" : "#8b005d" }}
-      className="button"
       onClick={props.onClick}
+      className={`button ${disabled ? 'invalid' : ''}`}
+      
     >
       {props.children}
     </button>
